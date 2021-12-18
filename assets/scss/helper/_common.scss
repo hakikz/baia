@@ -1,0 +1,129 @@
+body{
+    font-family: $fulite;
+    overflow-x: hidden;
+}
+
+.header-hero-wrap{
+    position: relative;
+    display: block;
+
+    &::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba($color: $col-brand, $alpha: 0.78);
+    }
+
+}
+
+.break{
+    display: block;
+    width: 100%;
+}
+
+.block-title{
+    text-align: center;
+    h2{
+        font-size: $fs + 40px;
+        font-family: $itp-lite;
+        font-weight: normal;
+    }
+
+    p{
+        font-size: $fs + 13px;
+        font-family: $itp-lite;
+    }
+}
+
+.register-now{
+    background-color: $col-foot1;
+    color: $white;
+    font-family: $itp-lite;
+    font-size: $fs + 35px;
+    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+    border: 1px solid $col-foot1;
+
+    &:hover{
+        text-decoration: none;
+        background-color: $white;
+        color: $col-foot1;
+    }
+}
+
+.overlay{
+    background-color: $overlay;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+
+.cta-wrap{
+    text-align: center;
+}
+
+.btn-baia{
+    background-color: $col-brand;
+    color: $white;
+    border-radius: 0;
+    padding: 7px 30px;
+    font-size: $fs + 7px;
+    font-family: $itp-lite;
+    border: 1px solid $col-brand;
+
+    &.white{
+        background-color: $white;
+        color: $col-brand;
+    }
+
+    &:hover{
+        background-color: $white;
+        color: $col-brand;
+    }
+}
+
+.scrollToTop{
+    width:100px; 
+    height:130px;
+    padding:10px; 
+    text-align:center; 
+    position:fixed;
+    bottom:75px;
+    right:40px;
+    display:none;
+
+    &:hover{
+        text-decoration:none;
+    }
+
+    span{
+        display: block;
+        text-transform: uppercase;
+        color: #ccc;
+    }
+}
+
+.carousel-indicators{
+    bottom: 5%;
+    li{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
+}
+
+@media (min-width: 1200px){   
+    .container{
+        max-width: 1250px;
+    }
+}
+
+

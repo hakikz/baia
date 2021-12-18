@@ -1,0 +1,25 @@
+.cta{
+    background-color: transparent;
+    color: $col-brand;
+
+    .cta-wrap{
+        padding: 17px 0 22px;
+        text-align: center;
+
+        p{
+            font-family: $gillsanslight;
+            font-size: $fs + 25px;
+            text-transform: uppercase;
+        }
+
+        a{
+            background-color: $col-brand;
+            color: $white;
+            font-family: $gillsanslight;
+            text-decoration: none;
+            font-size: $fs + 5px;
+            padding: 12px 20px;
+        }
+    }
+
+}
